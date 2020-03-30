@@ -19,6 +19,9 @@ class Order {
     private $customerID;
     private $total;
     
+    public static $SalesList=array(); //Just for sale Objects 
+
+
     public function getID() {
         return $this->ID;
     }

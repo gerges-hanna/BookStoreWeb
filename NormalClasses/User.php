@@ -12,6 +12,7 @@
  * @author Gerges hanna FCI-H
  */
 class User {
+    
     //put your code here
     private $ID;
     private $name;
@@ -19,13 +20,7 @@ class User {
     private $password;
     private $userType;
    
-    function __construct($ID, $name, $email, $password, $userType) {
-        $this->ID = $ID;
-        $this->name = $name;
-        $this->email = $email;
-        $this->password = $password;
-        $this->userType = $userType;
-    }
+    
     function getID() {
         return $this->ID;
     }
