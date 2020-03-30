@@ -11,7 +11,7 @@
  *
  * @author user
  */
-class Book {
+class Book extends Category {
     //put your code here
     private $id;
     private $customer_id;
