@@ -11,19 +11,23 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        $host="127.0.0.1";
-        $user="root";
-        $password="";
-        $database="book_shop";
-
-        $connect =  mysqli_connect($host, $user, $password, $database);
-
-        if(mysqli_connect_errno())
-        {
-            die("Cannot Connect To DataBase:".  mysqli_connect_error());
-        }  else {
-            echo 'Connected';
-        }
+            include './DBMangement.php';
+            $ae=new DBMangement();
+            $ae->ConnectStart();
+            $query='SELECT * FROM address ';
+            $res= $ae->executequery($query);
+     
+            while ($row=  mysqli_fetch_assoc($res))
+            {
+                $sa=new DBMangement();
+                $sa->id=$row['id'];
+                $sa->name=$row['country'];
+                $ae->ar[]=$sa;
+//            print_r($row);
+            }
+            //print_r($ae->ar);
+             echo $ae->ar[1]->id;
+            
         ?>
     </body>
 </html>
