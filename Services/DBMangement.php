@@ -2,7 +2,8 @@
 
 
 
-class DBMangement {
+class DBMangement 
+{
     //put your code here
     private $connect;
     function ConnectStart()

@@ -48,7 +48,10 @@ class BookService {
         if($res!=1)
         {
             $this->function_alert("Error");
-        }  
+        }  else {
+            
+            $this->function_alert("Done");
+        }
     }
     Function CreateBook(Book $book)
     {
