@@ -1,5 +1,6 @@
 <?php
 
+include './Category.php';
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -26,20 +27,7 @@ class Book extends Category {
     private $condition;
     private $status;
     
-    function __construct($id, $customer_id, $name, $author, $price, $stock, $description, $category, $image, $isbn, $condition, $status) {
-        $this->id = $id;
-        $this->customer_id = $customer_id;
-        $this->name = $name;
-        $this->author = $author;
-        $this->price = $price;
-        $this->stock = $stock;
-        $this->description = $description;
-        $this->category = $category;
-        $this->image = $image;
-        $this->isbn = $isbn;
-        $this->condition = $condition;
-        $this->status = $status;
-    }
+    
 
     
     function getId() {

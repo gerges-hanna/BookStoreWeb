@@ -1,5 +1,6 @@
 <?php
 
+include './User.php';
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,13 +20,7 @@ class UserRole extends User{
     private $write;
     private $delete;
     
-    public function __construct($userID, $roleName, $read, $write, $delete) {
-        $this->userID = $userID;
-        $this->roleName = $roleName;
-        $this->read = $read;
-        $this->write = $write;
-        $this->delete = $delete;
-    }
+    
     public function getUserID() {
         return $this->userID;
     }

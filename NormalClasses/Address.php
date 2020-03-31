@@ -7,13 +7,7 @@ class Address {
     private $city;
     private $state;
     private $street_no;
-    function __construct($id, $country, $city, $state, $street_no) {
-        $this->id = $id;
-        $this->country = $country;
-        $this->city = $city;
-        $this->state = $state;
-        $this->street_no = $street_no;
-    }
+    
     function getId() {
         return $this->id;
     }

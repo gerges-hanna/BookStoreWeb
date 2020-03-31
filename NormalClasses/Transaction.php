@@ -8,14 +8,7 @@ class Transaction {
   private $book;
   private $buyer_name;
   private $seller_name;
-  function __construct($buyer_id, $seller, $amount, $book, $buyer_name, $seller_name) {
-      $this->buyer_id = $buyer_id;
-      $this->seller = $seller;
-      $this->amount = $amount;
-      $this->book = $book;
-      $this->buyer_name = $buyer_name;
-      $this->seller_name = $seller_name;
-  }
+  
   function getBuyer_id() {
       return $this->buyer_id;
   }

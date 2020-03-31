@@ -5,9 +5,6 @@
 class DBMangement {
     //put your code here
     private $connect;
-    public $id;
-    public $name;
-    public $ar=array();
     function ConnectStart()
     {
         $host="127.0.0.1";
@@ -33,7 +30,7 @@ class DBMangement {
             
     function CloseConnect()
     {
-        mysql_close($this->connect);
+        mysqli_close($this->connect);
     }
     
    /*

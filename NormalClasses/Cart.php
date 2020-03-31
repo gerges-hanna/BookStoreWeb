@@ -5,11 +5,7 @@ class Cart {
     private $id;
     private $cartDetails;
     private $total;
-    function __construct($id, $cartDetails, $total) {
-        $this->id = $id;
-        $this->cartDetails = $cartDetails;
-        $this->total = $total;
-    }
+    
     function getId() {
         return $this->id;
     }

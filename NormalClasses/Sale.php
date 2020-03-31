@@ -4,11 +4,7 @@ class Sale {
     private $id;
     private $book;
     private $amount;   
-    function __construct($id, $book, $amount) {
-        $this->id = $id;
-        $this->book = $book;
-        $this->amount = $amount;
-    }
+    
     function getId() {
         return $this->id;
     }
